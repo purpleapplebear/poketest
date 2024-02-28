@@ -1,6 +1,6 @@
 import React from 'react'
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
+import Play from './Play';
 
 
 function MyRouter() {
@@ -8,9 +8,7 @@ function MyRouter() {
           <BrowserRouter>
           <div>
           <Routes>
-            <Route path="/" element={<nav><Link to="/">a</Link><Outlet /></nav>} />
-            <Route path="a" element={<h1>Hello: Page 2</h1>} />
-            <Route path="b" element={<h1>Hello: Page 3</h1>} />
+            <Route path="play" element={<Play />} />
   
           </Routes>
           </div>
